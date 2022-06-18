@@ -1,0 +1,110 @@
+
+// this is for a sentence
+const isPalindrom = (sentence) => {
+  sentence = sentence.split(' ').join('');
+  return sentence === sentence.split('').reverse('').join('');
+}
+
+// this is for a word
+const isPalindromWord = (word) => {
+  return word === word.split('').reverse().join('');
+}
+
+console.log(isPalindrom('amo la paloma'));
+console.log(isPalindrom('oso'));
+
+console.log(isPalindromWord('oso'));
+console.log(isPalindromWord('amo la paloma'))
+
+let date = Date.parse('2022-05-01');
+console.log(date);
+date = new Date(date);
+console.log(date);
+
+// # veces que se repite un caracter
+
+let text = 'qwefa1243idoasdhfj3250t9jdlñfañlkaw390';
+text = text.split('');
+let quantity = 0;
+const countChar = 'z'
+text.forEach((char, i) => quantity += (text[i] === countChar) ? 1 : 0 );
+console.log(`El caracter: '${countChar}' se repite ${quantity}`);
+
+// distancia de hamming
+let text1 = 'elmejorequiba';
+let text2 = 'lamejorprueba';
+
+if( text1.trim().length !== text2.trim().length ){
+  console.log('Las palabras deben tener la misma longitud');
+} else {
+  let longitud = 0;
+ 	text1 = text1.split('');
+  text2 = text2.split('');
+  text1.forEach((_, index) => longitud += (text1[index] === text2[index]) ? 1 : 0 );
+	console.log(`La longitud es ${longitud}`);
+}
+
+// contador de palabras
+let text3 = 'esta   es    un  ejemplo   de un contador   ';
+text3 = text3.replace(/\s+/g, ' ').trim().split(' ').length;
+console.log(`Total de palabras: ${text3}`);
+
+// contar caracteres por tipo en una cadena
+let text4 = 'af"#$23aSD1904tfjklqAFDSt54950afs43mda?¿';
+const numbers = /[0-9]/g;
+const strings = /[a-z]/g; // [a-zA-Z];
+const anyone = /\?/g;
+const n = text4.length - text4.replace(numbers, '').length;
+console.log(`Cantidad total de: ${n}`);
+
+
+
+// const sum = (a, b, ms) => {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => resolve(a+b), ms);
+//   })
+// }
+
+// sum(1, 6, 8000).then(res => console.log(res));
+// sum(5, 6, 3000).then(res => console.log(res));
+
+// (async() => {
+//   console.log('Inicia')
+//   const [ sum1, sum2 ] = await Promise.all([
+//     sum(1, 6, 10000),
+//     sum(7, 4, 10000)
+//   ]) 
+// 	console.log({sum1, sum2});
+// 	console.log('termina');
+// })();
+
+
+
+
+function arrayDiff(a, b) {
+  return a.filter(el => b.includes(el));
+}
+console.log(arrayDiff([1, 2], [2]));
+console.log(arrayDiff([], [1, 2]))
+
+
+
+function inArray(array1,array2){
+  let newArray = [];
+  array1.forEach(el => {
+    array2.some(item => {
+      if(item.match(new RegExp(el, 'i'))) {
+        newArray.push(el);
+      }
+    })
+  });
+  newArray = [...new Set(newArray)].sort();
+  return newArray;
+}
+
+console.log(inArray(["xyz", "live", "strong"], ["lively", "alive", "harp", "sharp", "armstrong"]));
+
+console.log(inArray( ["live", "strong", "arp"], ["lively", "alive", "harp", "sharp", "armstrong"]));
+
+
+
