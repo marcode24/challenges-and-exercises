@@ -106,5 +106,34 @@ console.log(inArray(["xyz", "live", "strong"], ["lively", "alive", "harp", "shar
 
 console.log(inArray( ["live", "strong", "arp"], ["lively", "alive", "harp", "sharp", "armstrong"]));
 
+/* split by special char */
+
+const str = '9*9-9';
+
+let spaced = '';
+
+for (const char of str) {
+  if (['*', '-'].includes(char)) {
+    spaced += ' '+  char + ' ';
+  } else {
+  	spaced += char;
+    
+  }
+}
+console.log(spaced);
+
+let result = spaced.split(' ');
+result = result.map(el => (!['*', '-'].includes(el)) ? Number(el): el).join('');
+const res = parseInt(result);
+console.log({res});
+console.log(result);
+
+
+
+
+
+
+
+
 
 
