@@ -1,4 +1,4 @@
-# Reto 2: ¡Automatizando envolver regalos de navidad!
+# Reto 2: Nadie quiere hacer horas extra
 
 ## Problema
 
