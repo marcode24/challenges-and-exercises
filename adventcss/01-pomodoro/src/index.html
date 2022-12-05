@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge 01 - Pomodoro Timer</title>
+  <link href="./css/index.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="progress">
+      <div id="timer" class="timer">
+        <div class="timer-container">
+          <span id="time" class="time">00:00</span>
+          <div class="timer-input">
+            <input id="minutes" type="number" min="0" max="60" value="00">
+            <span>:</span>
+            <input id="seconds" type="number" min="0" max="60" value="15">
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="start" class="start">Start</button>
+          <button id="stop" class="stop">Stop</button>
+          <div class="icon gear"></div>
+          <div class="icon check"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
