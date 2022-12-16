@@ -1,0 +1,16 @@
+{
+  "name": "04-keyboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/scss:src/css",
+    "watch": "sass src/scss:src/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.56.2"
+  }
+}
