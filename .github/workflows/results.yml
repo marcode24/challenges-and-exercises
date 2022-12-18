@@ -1,0 +1,50 @@
+name: RESULTS
+
+on:
+  push:
+    paths:
+      - "./adventjs/**"
+      - ".github/workflows/results.yml"
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: npm
+          cache-dependency-path: "./adventjs/package-lock.json"
+
+      - name: Install Dependencies
+        shell: bash
+        run: npm ci
+
+      - name: Run Linter
+        shell: bash
+        run: npm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup NodeJS 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: npm
+          cache-dependency-path: "./adventjs/package-lock.json"
+
+      - name: Install Dependencies
+        shell: bash
+        run: npm ci
+
+      - name: Run Challenges Tests
+        shell: bash
+        run: npm run test
