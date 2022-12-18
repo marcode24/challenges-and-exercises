@@ -6,6 +6,10 @@ on:
       - "./adventjs/**"
       - ".github/workflows/results.yml"
 
+defaults:
+  run:
+    working-directory: "./adventjs"
+
 jobs:
   linter:
     runs-on: ubuntu-latest
