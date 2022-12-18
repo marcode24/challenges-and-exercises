@@ -6,6 +6,10 @@ on:
       - "./adventjs/**"
       - ".github/workflows/results.yml"
 
+defaults:
+  run:
+    working-directory: "./adventjs"
+
 jobs:
   linter:
     runs-on: ubuntu-latest
@@ -13,11 +17,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup NodeJS 16.x
+      - name: Setup NodeJS 16
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
-          cache: npm
+          node-version: 16
+          cache: "npm"
+          cache-dependency-path: "./adventjs/package-lock.json"
 
       - name: Install Dependencies
         shell: bash
@@ -33,11 +38,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup NodeJS 16.x
+      - name: Setup NodeJS 16
         uses: actions/setup-node@v3
         with:
-          node-version: 16.x
-          cache: npm
+          node-version: 16
+          cache: "npm"
+          cache-dependency-path: "./adventjs/package-lock.json"
 
       - name: Install Dependencies
         shell: bash
