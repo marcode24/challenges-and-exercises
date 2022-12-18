@@ -18,7 +18,6 @@ jobs:
         with:
           node-version: 16.x
           cache: npm
-          cache-dependency-path: "./adventjs/package-lock.json"
 
       - name: Install Dependencies
         shell: bash
@@ -39,7 +38,6 @@ jobs:
         with:
           node-version: 16.x
           cache: npm
-          cache-dependency-path: "./adventjs/package-lock.json"
 
       - name: Install Dependencies
         shell: bash
