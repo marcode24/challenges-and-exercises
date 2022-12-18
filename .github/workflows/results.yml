@@ -5,6 +5,8 @@ on:
     paths:
       - "./adventjs/**"
       - ".github/workflows/results.yml"
+    branches:
+      - main
 
 defaults:
   run:
