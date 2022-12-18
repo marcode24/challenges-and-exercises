@@ -48,5 +48,6 @@ Difficulties legend:
 | 14  | [El mejor camino](https://adventjs.dev/challenges/2022/14)                                  |     🟡     |       [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/14-mejor-camino)       |
 | 15  | [Decorando el árbol de Navidad](https://adventjs.dev/challenges/2022/15)                    |     🟡     |    [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/15-decorando-el-arbol)    |
 | 16  | [Arreglando las cartas de Papá Noel](https://adventjs.dev/challenges/2022/16)               |     🔴     |  [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/16-arreglando-las-cartas)   |
+| 17  | [Llevando los regalos en sacos](https://adventjs.dev/challenges/2022/17)                    |     🟡     |     [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/17-regalos-en-sacos)     |
 
 coming soon...
