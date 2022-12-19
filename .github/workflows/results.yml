@@ -2,55 +2,49 @@ name: RESULTS
 
 on:
   push:
-    paths:
-      - "./adventjs/**"
-      - ".github/workflows/results.yml"
-    branches:
-      - main
-
-defaults:
-  run:
-    working-directory: "./adventjs"
+    branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize]
 
 jobs:
   linter:
+    name: ✅ Validate linter
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: ⬇️ Checkout project
         uses: actions/checkout@v3
 
-      - name: Setup NodeJS 16
+      - name: 🟢 Setup NodeJS 16.x
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: "npm"
-          cache-dependency-path: "./adventjs/package-lock.json"
+          node-version: 16.x
+          cache: npm
 
-      - name: Install Dependencies
-        shell: bash
+      - name: 📥 Install dependencies
         run: npm ci
 
-      - name: Run Linter
-        shell: bash
+      - name: 📑 Check lint
         run: npm run lint
 
-  test:
+  tests:
+    name: 🧑‍🔬 Test project
     runs-on: ubuntu-latest
+    needs: validate
+
     steps:
-      - name: Checkout
+      - name: ⬇️ Checkout project
         uses: actions/checkout@v3
 
-      - name: Setup NodeJS 16
+      - name: 🟢 Setup NodeJS 16.x
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: "npm"
-          cache-dependency-path: "./adventjs/package-lock.json"
+          node-version: 16.x
+          cache: npm
 
-      - name: Install Dependencies
-        shell: bash
+      - name: 📥 Install dependencies
         run: npm ci
 
-      - name: Run Challenges Tests
-        shell: bash
+      - name: 🧪 Run challenges
         run: npm run test
