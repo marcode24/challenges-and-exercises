@@ -28,7 +28,7 @@ jobs:
       - name: 📑 Check lint
         run: npm run lint
 
-  tests:
+  test:
     name: 🧑‍🔬 Test project
     runs-on: ubuntu-latest
     needs: validate
