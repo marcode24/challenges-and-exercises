@@ -2,6 +2,9 @@ name: RESULTS
 
 on:
   push:
+    paths:
+    - "./adventjs/**"
+    - ".github/workflows/results.yml"
     branches: [main]
   pull_request:
     branches: [main]
