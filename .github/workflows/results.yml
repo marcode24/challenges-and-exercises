@@ -31,7 +31,6 @@ jobs:
   test:
     name: 🧑‍🔬 Test project
     runs-on: ubuntu-latest
-    needs: validate
 
     steps:
       - name: ⬇️ Checkout project
