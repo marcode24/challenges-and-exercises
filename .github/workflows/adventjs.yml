@@ -1,10 +1,10 @@
-name: RESULTS
+name: ADVENTJS
 
 on:
   push:
     paths:
-    - "./adventjs/**"
-    - ".github/workflows/results.yml"
+    - 'adventjs/**'
+    - '.github/workflows/adventjs.yml'
     branches: [main]
   pull_request:
     branches: [main]
