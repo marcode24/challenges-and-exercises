@@ -10,6 +10,10 @@ on:
     branches: [main]
     types: [opened, synchronize]
 
+defaults:
+  run:
+    working-directory: ./adventjs
+
 jobs:
   linter:
     name: ✅ Validate linter
