@@ -37,6 +37,7 @@ Difficulties legend:
 | 02  | [Nadie quiere hacer horas extra](https://adventjs.dev/challenges/2022/2)                    |     🟢     |       [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/02-horas-extra)        |
 | 03  | [¿Cuántas cajas de regalos puede llevar Papá Noel?](https://adventjs.dev/challenges/2022/3) |     🟢     |     [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/03-cajas-de-regalo)      |
 | 04  | [Una caja dentro de otra caja y otra...](https://adventjs.dev/challenges/2022/4)            |     🟡     | [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/04-caja-dentro-de-otra-caja) |
+| 05  | [Optimizando viajes de Santa](https://adventjs.dev/challenges/2022/5)                       |     🔴     |    [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/05-optimizando-viajes)    |
 | 06  | [Creando adornos navideños](https://adventjs.dev/challenges/2022/6)                         |     🟡     |    [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/06-adornos-navideños)     |
 | 07  | [Haciendo inventario de regalos](https://adventjs.dev/challenges/2022/7)                    |     🟢     |  [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/07-inventarios-de-regalos)  |
 | 08  | [¡Necesitamos un mecánico!](https://adventjs.dev/challenges/2022/8)                         |     🟡     |         [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/08-mecanico)         |
@@ -52,5 +53,7 @@ Difficulties legend:
 | 18  | [¡Nos quedamos sin tinta!](https://adventjs.dev/challenges/2022/18)                         |     🟢     |        [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/18-sin-tinta)         |
 | 19  | [Ordenando los regalos](https://adventjs.dev/challenges/2022/19)                            |     🟢     |  [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/19-ordenando-los-regalos)   |
 | 20  | [Más viajes retadores](https://adventjs.dev/challenges/2022/20)                             |     🔴     |   [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/20-mas-viajes-retadores)   |
-
-coming soon...
+| 21  | [Creando la tabla de regalos](https://adventjs.dev/challenges/2022/21)                      |     🟡     |     [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/21-tabla-de-regalos)     |
+| 22  | [La iluminación en sintonía](https://adventjs.dev/challenges/2022/22)                       |     🟢     | [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/22-iluminacion-en-sintonia)  |
+| 23  | [Compilador de Papá Noel](https://adventjs.dev/challenges/2022/23)                          |     🔴     | [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/23-compilador-de-papa-noel)  |
+| 24  | [El último reto es un laberinto](https://adventjs.dev/challenges/2022/24)                   |     🔴     |        [here](https://github.com/marcode24/challenges-and-exercises/tree/main/adventjs/src/24-laberinto)         |
